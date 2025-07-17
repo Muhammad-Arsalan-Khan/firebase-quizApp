@@ -37,5 +37,10 @@ async function QuizStart(e) {
 window.QuizStart = QuizStart;
 
 
-
-
+function logout() {
+  localStorage.removeItem("quizId")
+  localStorage.removeItem("QuizAppUid")
+  
+  getQuiz()
+}
+window.logout = logout;

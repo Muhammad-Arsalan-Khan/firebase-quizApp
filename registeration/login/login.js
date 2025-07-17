@@ -6,12 +6,13 @@ import {
   db,
 } from "../../firebase.js";
 
+
 const authCheck = () => {
   console.log("i ma authCheck");
   const userUid = localStorage.getItem("QuizAppUid");
   //console.log("userUid", userUid)
   if (userUid) {
-    window.location.replace("../../user/dashboard/dashboard.html");
+    window.location.replace("../../user/dashboard/dashboard.html"); 
   }
 };
 window.authCheck = authCheck;
@@ -39,7 +40,7 @@ async function login() {
       const userType = docSnap.data();
       userType.type === "admin"
         ? window.location.assign("../../admin/dashboard/dashboard.html")
-        : window.location.replace("../../user/dashboard.html");
+        : window.location.replace("../../user/dashboard/dashboard.html");
       // if (userType.type === "admin") {
           
       //     window.location.assign("../../admin/dashboard/dashboard.html")

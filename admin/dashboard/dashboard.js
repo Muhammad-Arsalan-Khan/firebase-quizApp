@@ -16,3 +16,12 @@ async function fetchScore() {
   });
 }
 window.fetchScore = fetchScore;
+
+
+function logout() {
+  localStorage.removeItem("quizId")
+  localStorage.removeItem("QuizAppUid")
+  
+  fetchScore()
+}
+window.logout = logout;
