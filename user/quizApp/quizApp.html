@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quizApp.css">
+</head>
+<body onload="getQuizData()">
+    <div class="container" id="container">
+        <div class="time">
+            <span id="min">15</span><span id="sec">:00</span>
+        </div>
+        <div class="heading">Quiz app</div>
+        <div class="question-container" id="question-container">
+            <!-- Ui question -->
+        </div>
+        <div class="option" id="option">
+            <!-- option -->
+        </div>
+        <div class="btn">
+            <button onclick="nextQuestion()" id="btn">Next</button>
+        </div>
+    </div>
+    <script type="module" src="quizApp.js"></script>
+</body>
+</html>

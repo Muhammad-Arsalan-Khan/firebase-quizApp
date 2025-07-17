@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body onload="fetchScore()">
+    <header>
+        <div class="hearder">
+            <h1>Quiz App</h1>
+            <nav>
+                <ul>
+                    <li><a href="./dashboard.html">Dashboard</a></li>
+                    <li><a href="../createQuiz/create.html">Create Quiz</a></li>
+                    <li><a href="../quizlist/quizlist.html">Quiz Listing</a></li>
+                    <li><a href="../../index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>All User Quiz Score List</h2>
+            <table border id="scoreInfo">
+                <tr class="tableFirstRow">
+                    <td>Name</td>
+                    <td>ID</td>
+                    <td>Quiz Title</td>
+                    <td>Quiz Category</td>
+                    <td>Correct Ans</td>
+                    <td>Wrong Ans</td>
+                    <td>Percentage</td>
+                </tr>
+                <tr>
+                    <td>Arsalan</td>
+                    <td>xJVM7lUHvBM1UcYZWgf0DkaGNvc2</td>
+                    <td>science</td>
+                    <td>Quiz Category gernal knowloadege science</td>
+                    <td>15</td>
+                    <td>5</td>
+                    <td>75%</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script type="module" src="dashboard.js"></script>
+</body>
+</html>

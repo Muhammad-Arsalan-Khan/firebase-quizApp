@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quizScoreList.css">
+</head>
+<body onload="fetchScore()">
+    <header>
+        <div class="hearder">
+            <h1>Quiz App</h1>
+            <nav>
+                <ul>
+                    <li><a href="../dashboard/dashboard.html">Dashboard</a></li>
+                    <li><a href="./quizScoreList.html">Score List</a></li>
+                    <li><a href="../../index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container" id="container">
+            <table border id="scoreInfo">
+                <tr class="tableFirstRow">
+                    <td>Quiz Title</td>
+                    <td>Quiz Category</td>
+                    <td>Correct Ans</td>
+                    <td>Wrong Ans</td>
+                    <td>Percentage</td>
+                </tr>
+                <!-- <tr >
+                    score
+                </tr> -->
+            </table>
+        </div>
+    </main>
+</body>
+
+<script type="module" src="quizScoreList.js"></script>
+</html>
